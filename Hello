@@ -1,0 +1,34 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int ant = 0;
+        int diant = 0;
+        System.out.println("Enter Number:");
+        Scanner scan = new Scanner(System.in);
+        int c = scan.nextInt();
+        for(int i=1;i<=c;i++){
+            if(i%12==0){
+                diant += i;
+                ant ++;
+            }
+            System.out.println(diant);
+        }
+        double NewCal = c/ant;
+
+        System.out.println(NewCal+" = Sayıların ortlaması");
+        int Caunter=0;
+        int Foreigner=0;
+        for(int i = 1; i<=c;i++){
+            if(i%2==0){
+               Caunter+= Foreigner;
+            }
+        System.out.println("Çift Sayı: " + Caunter);
+        }
+        
+	// write your code here
+    }
+}
